@@ -23,13 +23,13 @@ for filename in os.listdir("inputs"):
         image.save(f"{output_dirname}/page{i}.jpg", "JPEG")
         images[i] = image
 
-    total_height = sum(img.height for img in images)
-    max_width = max(img.width for img in images)
-    merged_image = Image.new("RGB", (max_width, total_height))
+    # total_height = sum(img.height for img in images)
+    # max_width = max(img.width for img in images)
+    # merged_image = Image.new("RGB", (max_width, total_height))
 
-    y_offset = 0
-    for image in images:
-        merged_image.paste(image, (0, y_offset))
-        y_offset += image.height
+    # y_offset = 0
+    # for image in images:
+    #     merged_image.paste(image, (0, y_offset))
+    #     y_offset += image.height
 
-    merged_image.save(f"{output_dirname}/output.jpg", "JPEG")
+    # merged_image.save(f"{output_dirname}/output.jpg", "JPEG")

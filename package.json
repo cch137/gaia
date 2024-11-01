@@ -1,5 +1,5 @@
 {
-  "name": "pi-api",
+  "name": "gaia",
   "version": "0.0.1",
   "description": "",
   "type": "module",
@@ -19,6 +19,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "openai": "^4.70.2"
   }
 }
